@@ -40,4 +40,29 @@
 **q** — выход из «режима копирования».
 
 
+### Поддержка мышки в Midnight Commander запущенного из под tmux
+
+ **~/.profile**:
+
+```
+if [ $TERM = "screen" ]; then
+    export TERM=xterm
+fi
+if [ -n "$TMUX" ]; then
+    export COLORTERM=rxvt
+fi
+```
+
+**~/.tmux.conf**:
+```
+setw -g xterm-keys on
+```
+
+
+### Ссылки
+
+https://wiki.archlinux.org/index.php/Tmux_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
+
 https://habrahabr.ru/post/126996/
+
+https://habrahabr.ru/post/127133/
