@@ -9,14 +9,14 @@ https://certbot.eff.org/
 
 Выбираем платформу и OS, далее действуем по тексту.
 
-Для CENTOS7 и nginx:
+#### Для CENTOS7 и nginx:
 
 **sudo yum install epel-release**
 
 **sudo yum install certbot**
 
 
-Для DEBIAN 8 и nginx:
+#### Для DEBIAN 8 и nginx:
 
 Добавляем в **/etc/apt/sources.list**:
 
