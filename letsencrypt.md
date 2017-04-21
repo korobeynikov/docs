@@ -11,10 +11,10 @@ https://certbot.eff.org/
 
 Для CENTOS7 и nginx:
 
-```
-sudo yum install epel-release
-sudo yum install certbot
-```
+**sudo yum install epel-release**
+
+**sudo yum install certbot
+
 
 Для DEBIAN 8 и nginx:
 
