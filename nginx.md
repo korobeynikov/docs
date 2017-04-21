@@ -1,4 +1,4 @@
-# Настройки nginx на OBEDOV.NET
+# Настройки nginx
 
 **/etc/sysconfig/nginx**:
 
