@@ -60,3 +60,21 @@ WantedBy=multi-user.target
 
 ```
 
+### Firewalld setup
+
+```
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=10050/tcp
+firewall-cmd --permanent --add-port=10051/tcp
+firewall-cmd --reload
+```
+
+### SELinux tuning
+
+```
+setsebool -P httpd_can_network_connect on
+getsebool httpd_can_network_connect
+
+```
+
