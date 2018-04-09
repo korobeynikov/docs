@@ -1,6 +1,6 @@
 ### Systemd file
 
-**/usr/lib/systemd/system/zabbix-server/zabbix-server.service:**
+**/usr/lib/systemd/system/zabbix-server.service:**
 
 ```
 
@@ -28,7 +28,7 @@ WantedBy=multi-user.target
 ```
 
 
-**/usr/lib/systemd/system/zabbix-server/zabbix-agent.service:**
+**/usr/lib/systemd/system/zabbix-agent.service:**
 
 ```
 
