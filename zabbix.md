@@ -10,7 +10,7 @@
 
 ```
 
-Unit]
+[Unit]
 Description=Zabbix Server
 After=syslog.target
 After=network.target
