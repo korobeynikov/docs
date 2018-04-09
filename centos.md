@@ -7,6 +7,6 @@ enabled=1
 ```
 To only use the DVDmedia repo, do this:
 ```
-yum --disablerepo=\* --enablerepo=c5-media install pacakge-name
+yum --disablerepo=\* --enablerepo=c7-media install pacakge-name
 ```
 
