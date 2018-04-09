@@ -10,7 +10,7 @@ CONFFILE=/usr/local/nginx/conf/nginx.conf
 
 ```
 
-**/usr/lib/systemd/system**:
+**/usr/lib/systemd/system/nginx.service**:
 
 ```
 [Unit]
