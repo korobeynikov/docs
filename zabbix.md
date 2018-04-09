@@ -1,3 +1,9 @@
+### Compile string
+
+```
+./configure --enable-server --enable-agent --with-mysql --enable-ipv6 --with-net-snmp --with-libcurl --with-libxml2
+```
+
 ### Systemd file
 
 **/usr/lib/systemd/system/zabbix-server.service:**
