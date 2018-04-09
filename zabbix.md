@@ -1,6 +1,6 @@
 ### Systemd file
 
-**/usr/lib/systemd/system/zabbix-server/zabbix-server.service**
+**/usr/lib/systemd/system/zabbix-server/zabbix-server.service:**
 
 ```
 
@@ -28,5 +28,29 @@ WantedBy=multi-user.target
 ```
 
 
-**/usr/lib/systemd/system/zabbix-server/zabbix-agent.service**
+**/usr/lib/systemd/system/zabbix-server/zabbix-agent.service:**
+
+```
+
+[Unit]
+Description=Zabbix Agent
+After=syslog.target
+After=network.target
+
+[Service]
+Environment="CONFFILE=/etc/zabbix/zabbix_agentd.conf"
+EnvironmentFile=-/etc/sysconfig/zabbix-agent
+Type=forking
+Restart=on-failure
+PIDFile=/run/zabbix/zabbix_agentd.pid
+KillMode=control-group
+ExecStart=/usr/sbin/zabbix_agentd -c $CONFFILE
+ExecStop=/bin/kill -SIGTERM $MAINPID
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
+
+
+```
 
